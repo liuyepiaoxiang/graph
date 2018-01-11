@@ -1,0 +1,311 @@
+@font-face {
+	font-family:"awesome";
+	src: url(css/font/FontAwesome.otf);
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+html body{
+	font-family: "微软雅黑";
+	background: #032c4c;
+}
+ul li{
+	list-style: none;
+}
+.components{
+	float: left;
+	margin-right: 20px;
+	font-family: "微软雅黑";
+}
+.clear{
+	clear: both;
+}
+#status{
+	font-family: "微软雅黑";
+	color: #222;
+}
+#labels{
+	color: #222;
+}
+.btn{
+	background: #656a76;
+	color: #fff;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	height: 20px;
+	display: inline-block;
+	height: 30px;
+	border: 1px solid #222;
+	border-bottom: #fff;
+	padding: 0 15px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	margin-right: -7px;
+	margin-bottom: -1px;
+}
+.btn_active{
+	background: #fff;
+	color: #222;
+}
+#accordion .s2_inner,#accordion .s3_inner,#accordion .s4_inner{
+	border: 1px solid #222;
+	background: #fff;
+}
+.icons{
+	margin: 0;
+	width:13%;
+	display: inline;
+	float: right;
+}
+.icons li{
+	float: left;
+	height: 30px;
+	width: 30px;
+}
+.icons li span{
+	font-size: 16px;
+	color: #222;
+}
+.entity-relationship{
+	height: 100px;
+	border-radius: 5px;
+}
+.entity-relationship ul li{
+	height: 40px;
+	font-family: "微软雅黑";
+	font-weight: 100;
+}
+.entity-relationship ul li span{
+	font-family: "微软雅黑";
+	height: 20px;
+	display: inline-block;
+	padding: 2px 10px;
+	border-radius: 5px;
+	line-height: 20px;
+	background: #ccc;
+	margin-right: 20px;
+	font-size: 14px;
+	color: #eee;
+	cursor: pointer;
+}
+.ppt-container-query{
+	background: #fff;
+	border: 1px solid #b4b4b4;
+	margin-top: 10px;
+}
+.ppt-container-cypher{
+	background: #fff;
+	border: 1px solid #b4b4b4;
+	margin-top: 10px;
+}
+.ui-corner-bottom{
+	background: #fff;
+}
+.ui-widget-content{
+	color: #222;
+}
+.ui-helper-hidden-accessible{
+	background: #ecf0f1;
+	color: #222;
+}
+.ui-state-default, .ui-widget-content .ui-state-default{
+	background: #ecf0f1;
+	color: #222;
+}
+.ppt-result{
+	background: #ecf0f1;
+}
+.ui-tooltip-content{
+	background: transparent;
+	border: none;
+}
+.search_border{
+	/*position: relative;*/
+}
+.search_border .searchBtn{
+	/*position: absolute;*/
+	right: 0;
+	top: -4px;
+	font-size: 16px;
+	height: 30px;
+	background: #21c9ed;
+	line-height: 30px;
+	padding: 0 10px;
+	color: #fff;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active{
+	background: #42bcb8;
+	border: #42bcb8 solid 1px;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+	border: 1px solid #42bcb8;
+}
+.ui-button-text{
+	border: none;
+}
+#load-labels{
+	border: none;
+	background: #42BCB8;
+	color: #fff;
+}
+#test-layout{
+	background: #42BCB8;
+	color: #fff;
+	border: none;
+}
+#test-labels{
+	border: none;
+	color: #fff;
+	background: #42BCB8;
+}
+#query-elmt{
+	background: #fff;
+	margin-top: 10px;
+}
+#cypher-elmt{
+	background: #fff;
+	margin-top: 10px;
+}
+#search{
+	margin:auto;
+	border: 1px solid #b4b4b4;
+	height: 30px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+#search:focus,{
+	border: none;
+	height: 30px;
+	border-radius: 5px;
+}
+.ppt-div-graph{
+	position: relative;
+}
+.ppt-container-results{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background: #FFFFFF;/*  #c4c8c9  */
+	color: #222;
+	border-top: 1px solid #b4b4b4;
+	border-bottom-left-radius: 0;
+	padding: 5px;
+	padding-left: 20px;
+}
+.relationship_right ul{
+	padding: 0;
+}
+.relationship_right ul li{
+	height: 70px;
+	/*width: 70px;*/
+	width: 85px;
+	padding-top: 10px;
+	text-align: center;
+	background: #032a49;
+	border-bottom: 1px solid #21c9ed;
+	border-left: 1px solid #21c9ed;
+	cursor: pointer;
+}
+.relationship_right ul a{
+	text-decoration: none;
+}
+.relationship_right ul li span{
+	font-size: 36px;
+	color: #21c9ed;
+}
+.relationship_right ul li p{
+	font-size: 16px;
+	color: #21c9ed;
+	text-decoration: none;
+}
+#swgraph-results p{
+	float: left;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 3px 6px;
+	background: #42BCB8;
+	color: #fff;
+	border-radius: 8px;
+	margin-right: 20px;
+}
+#swgraph-results span{
+	font-size: 14px;
+	line-height: 22px;
+}
+#swgraph-results .attributeName{
+	color: #707880;
+	font-weight: bold;
+}
+#swgraph-results .attributeValue{
+	color: #AAAAAA;
+	margin-right: 20px;
+}
+.tab_rel{
+	margin: 0 auto;
+}
+.tab_rel_left,.tab_rel_right{
+	float: left;
+	background: #ccc;
+	border: 1px solid #C0C0C0;
+	border-top: none;
+	border-left: none;
+	color: #666666;
+	padding: 5px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.tab_active{
+	background: #f3f3f3;
+	border-bottom: none;
+	color: #222;
+}
+.tab_inner{
+	background: #f3f3f3;
+	padding: 0;
+}
+.tab_inner ul{
+	background: transparent;
+	border: none;
+	padding: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+/*hth20160809添加小提示框的样式*/
+.tooltip{
+	opacity:0;
+	position: absolute;
+	width: auto;
+	height: auto;
+	text-align: left;
+	font-size: 14px;
+	font-family: "微软雅黑",Arial;
+	border: 2px solid gray;
+	border-radius: 5px;
+	background-color: gray;
+	color: white;
+	visibility: hidden;
+	padding: 5px 10px 5px 10px;
+}
+.tooltip:after{
+	content: ' ';
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	bottom: 100%;
+	left: 10%;
+	margin-left: -10px;
+	border-bottom: 12px solid gray;
+	border-right: 12px solid transparent;
+	border-left: 12px solid transparent;
+}
+/*hth20160809添加小提示框的样式*/
+
+/*hth20160809用于鼠标左键点击以后其他社区显示隐藏的效果*/
+.toggleby_communityrule{
+	display: none;
+}
+/*hth20160809用于鼠标左键点击以后其他社区显示隐藏的效果*/

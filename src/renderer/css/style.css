@@ -1,0 +1,73 @@
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		ul li{
+			list-style: none;
+		}
+		.clear{
+			clear: both;
+		}
+		body{
+			font-family: arial;
+		}
+		.popup{
+			padding-bottom: 10px;
+			width: 570px;
+			border: 1px solid #b4b4b4;
+			border-radius: 10px;
+		}
+		.pop_top{
+			height: 40px;
+			background: #21c9ed;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+		}
+		.pop_top span{
+			font-size: 16px;
+			line-height: 40px;
+			color: #fff;
+			float: left;
+			margin-left: 20px;
+		}
+		.content{
+			height: 36px;
+			font-size: 16px;
+			border-radius: 5px;
+			outline: medium;
+			border: 1px solid #21c9ed;
+		}
+		.input_area{
+			font-size: 16px;
+			border: 1px solid #21c9ed;
+			border-radius: 5px;
+			height: 36px;
+			font-family: "微软雅黑";
+		}
+		.btn{
+			border: 1px solid #21c9ed;
+			height: 36px;
+			background: #21c9ed;
+			color: #fff;
+			font-size: 12px;
+			border-radius: 5px;
+			padding: 0 10px;
+		}
+		.popup ul{
+			padding: 10px;
+		}
+		.popup ul li{
+			margin-bottom: 10px;
+		}
+		.bot{
+			text-align: right;
+		}
+		.bot_btn{
+			margin-right: 20px;
+		}
+		.bot span{
+			color: #21c9ed;
+			border: 1px solid #21c9ed;
+			padding: 10px 12px;
+			border-radius: 20px;
+		}
