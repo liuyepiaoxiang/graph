@@ -3,8 +3,7 @@
  */
 import process from 'process'
 
-function getEnv () {
-  const pathName = 'java'
+function getEnv (pathName) {
   let strPath = process.env['PATH']
 
   let nodePath = strPath.split(';').filter((str) => {
@@ -15,7 +14,7 @@ function getEnv () {
   return nodePath[0]
 }
 
-function downloadJava () {
+function download () {
 
 }
 
@@ -25,5 +24,19 @@ function setEnv () {
 
 function startNeo4j () {
 
+}
+
+function checkEnv () {
+  const javaName = 'java'
+  const neoName = 'neo4j'
+
+  let javaPath = getEnv(javaName)
+  let neoPath = getEnv(neoName)
+
+  if (javaPath) {
+    console.log('java path is ', javaPath)
+  } else {
+    download()
+  }
 }
 export default getEnv
