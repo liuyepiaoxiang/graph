@@ -3,6 +3,10 @@
  */
 import process from 'process'
 
+const download = require('./env/download')
+const install = require('./env/install')
+const environment = require('./env/environment')
+
 function getEnv (pathName) {
   let strPath = process.env['PATH']
 
@@ -14,9 +18,6 @@ function getEnv (pathName) {
   return nodePath[0]
 }
 
-function download () {
-
-}
 
 function setEnv () {
 
@@ -36,7 +37,11 @@ function checkEnv () {
   if (javaPath) {
     console.log('java path is ', javaPath)
   } else {
-    download()
+      download(function () {
+          install(function (variables) {
+              environment(variables)
+          })
+      })
   }
 }
 export default getEnv

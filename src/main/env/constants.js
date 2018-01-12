@@ -9,14 +9,6 @@ var buildTools = {
   logName: 'java-log.txt'
 }
 
-var python = {
-  installerName: 'python-2.7.13.msi',
-  installerUrl: pythonMirror.replace(/\/*$/, '/2.7.13/python-2.7.13.msi'),
-  targetName: 'python27',
-  logName: 'python-log.txt'
-}
-
 module.exports = {
   buildTools,
-  python
 }

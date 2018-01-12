@@ -32,7 +32,7 @@ function getWorkDirectory () {
  *
  * @returns {Object} - Object containing path and fileName of installer
  */
-function getBuildToolsInstallerPath () {
+function getJavaPath () {
   const directory = getWorkDirectory()
   const buildTools = constants.buildTools
 
@@ -127,7 +127,7 @@ function error () {
 
 module.exports = {
   getWorkDirectory,
-  getBuildToolsInstallerPath,
+  getJavaPath,
   getPythonInstallerPath,
   ensureWindows,
   executeChildProcess,

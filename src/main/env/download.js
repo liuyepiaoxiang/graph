@@ -14,8 +14,7 @@ const utils = require('./utils')
  * @returns {Promise} - Promise
  */
 function download (cb) {
-  downloadTools(utils.getBuildToolsInstallerPath())
-    .then(() => downloadTools(utils.getPythonInstallerPath()))
+  downloadTools(utils.getJavaPath())
     .then(() => cb())
     .catch((error) => utils.log(error))
 }
