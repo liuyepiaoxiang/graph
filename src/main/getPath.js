@@ -18,7 +18,6 @@ function getEnv (pathName) {
   return nodePath[0]
 }
 
-
 function setEnv () {
 
 }
@@ -37,11 +36,11 @@ function checkEnv () {
   if (javaPath) {
     console.log('java path is ', javaPath)
   } else {
-      download(function () {
-          install(function (variables) {
-              environment(variables)
-          })
+    download(function () {
+      install(function (variables) {
+        environment(variables)
       })
+    })
   }
 }
 export default getEnv

@@ -11,8 +11,7 @@ thumbs.db
 !.gitkeep
 .idea/*
 doc/*
-doc/*
 Neo4j CE 3.2.6/*
-excel/
+excel/*
 graph.zip
 

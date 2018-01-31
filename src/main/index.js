@@ -6,7 +6,7 @@ import path from 'path'
 import fs from 'fs'
 /* import { app, BrowserWindow, ipcMain, protocol, shell, systemPreferences, dialog } from 'electron' */
 import { app, BrowserWindow, ipcMain } from 'electron'
-import getEnv from './getPath'
+// import getEnv from './getPath'
 import database from './neo4jDriver'
 import { names } from './config'
 import cypher from './neo4jSearch'
@@ -40,7 +40,7 @@ function createWindow () {
   mainWindow.on('closed', () => {
     mainWindow = null
   })
-  getEnv()
+  // getEnv()
 }
 
 app.on('ready', createWindow)
