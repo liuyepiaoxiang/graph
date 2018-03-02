@@ -9,7 +9,7 @@
 ### 数据库配置
 
 1. 启动Neo4j CE 3.2.6/bin/neo4j-ce.exe
-2. 切换Neo4j界面上的Database Location为当前电脑可用路径
+2. 切换Neo4j界面上的Database Location为当前电脑的可用路径
 
 ### 安装
 
