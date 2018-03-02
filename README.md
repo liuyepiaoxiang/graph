@@ -9,7 +9,7 @@
 ### 数据库配置
 
 1. 启动Neo4j CE 3.2.6/bin/neo4j-ce.exe
-2. 切换Neo4j界面上的Database Location为当前电脑可用路径
+2. 切换Neo4j界面上的Database Location为当前电脑的可用路径
 
 ### 安装
 
@@ -24,7 +24,7 @@
 
 ## 待完善功能
 - 重要度计算
-- 文件读取移动到后端处理
+- 文件的读取移动到后端处理
 - node通过Command安装Java和启动Neo4j
 - 聚类算法
 - Neo4j连接判断与启动
